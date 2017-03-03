@@ -15,6 +15,8 @@
 		884CF9981E6813E30025DE3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884CF9961E6813E30025DE3A /* LaunchScreen.storyboard */; };
 		884CF9A31E6813E40025DE3A /* collectionView____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 884CF9A21E6813E40025DE3A /* collectionView____Tests.m */; };
 		884CF9AE1E6813E40025DE3A /* collectionView____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 884CF9AD1E6813E40025DE3A /* collectionView____UITests.m */; };
+		884CF9C01E6814200025DE3A /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 884CF9BE1E6814200025DE3A /* CollectionViewCell.m */; };
+		884CF9C31E6814450025DE3A /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 884CF9C21E6814450025DE3A /* TestVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		884CF9A91E6813E40025DE3A /* collectionView单双路珠UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "collectionView单双路珠UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		884CF9AD1E6813E40025DE3A /* collectionView____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "collectionView____UITests.m"; sourceTree = "<group>"; };
 		884CF9AF1E6813E40025DE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		884CF9BD1E6814200025DE3A /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		884CF9BE1E6814200025DE3A /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		884CF9C11E6814450025DE3A /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
+		884CF9C21E6814450025DE3A /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,11 @@
 				884CF98C1E6813E30025DE3A /* AppDelegate.m */,
 				884CF98E1E6813E30025DE3A /* ViewController.h */,
 				884CF98F1E6813E30025DE3A /* ViewController.m */,
+				884CF9C11E6814450025DE3A /* TestVC.h */,
+				884CF9C21E6814450025DE3A /* TestVC.m */,
 				884CF9911E6813E30025DE3A /* Main.storyboard */,
+				884CF9BD1E6814200025DE3A /* CollectionViewCell.h */,
+				884CF9BE1E6814200025DE3A /* CollectionViewCell.m */,
 				884CF9941E6813E30025DE3A /* Assets.xcassets */,
 				884CF9961E6813E30025DE3A /* LaunchScreen.storyboard */,
 				884CF9991E6813E30025DE3A /* Info.plist */,
@@ -207,7 +217,8 @@
 				TargetAttributes = {
 					884CF9841E6813E30025DE3A = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = YUB662KJD7;
+						ProvisioningStyle = Manual;
 					};
 					884CF99D1E6813E40025DE3A = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -273,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884CF9C31E6814450025DE3A /* TestVC.m in Sources */,
+				884CF9C01E6814200025DE3A /* CollectionViewCell.m in Sources */,
 				884CF9901E6813E30025DE3A /* ViewController.m in Sources */,
 				884CF98D1E6813E30025DE3A /* AppDelegate.m in Sources */,
 				884CF98A1E6813E30025DE3A /* main.m in Sources */,
@@ -424,10 +437,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YUB662KJD7;
 				INFOPLIST_FILE = "collectionView单双路珠/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.collectionView----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ea85b25d-c567-4824-b02c-a746f1bf8c84";
+				PROVISIONING_PROFILE_SPECIFIER = iOSTest;
 			};
 			name = Debug;
 		};
@@ -435,10 +452,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YUB662KJD7;
 				INFOPLIST_FILE = "collectionView单双路珠/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.collectionView----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ea85b25d-c567-4824-b02c-a746f1bf8c84";
+				PROVISIONING_PROFILE_SPECIFIER = iOSTest;
 			};
 			name = Release;
 		};
@@ -507,6 +528,7 @@
 				884CF9B41E6813E40025DE3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		884CF9B51E6813E40025DE3A /* Build configuration list for PBXNativeTarget "collectionView单双路珠Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +537,7 @@
 				884CF9B71E6813E40025DE3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		884CF9B81E6813E40025DE3A /* Build configuration list for PBXNativeTarget "collectionView单双路珠UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +546,7 @@
 				884CF9BA1E6813E40025DE3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
