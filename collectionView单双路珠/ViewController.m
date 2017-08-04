@@ -21,7 +21,9 @@
     NSLog(@"测试一下");
     
 }
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"分支111");
+}
 - (IBAction)btnClick:(id)sender {
     TestVC *vc = [[TestVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
