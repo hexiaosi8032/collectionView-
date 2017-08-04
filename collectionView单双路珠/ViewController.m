@@ -28,6 +28,8 @@
     NSLog(@"分支2");
     TestVC *vc = [[TestVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
+    
+    NSLog(@"分支222");
 }
 
  
