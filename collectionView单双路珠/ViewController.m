@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
  
+    NSLog(@"测试一下");
+    
 }
 
 - (IBAction)btnClick:(id)sender {
