@@ -96,7 +96,7 @@
     
     [self getDatas];
     [self collection];
-   
+    NSLog(@"分支2的提交");
 }
 
 #pragma mark - 自定义方法
