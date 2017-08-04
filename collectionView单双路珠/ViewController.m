@@ -25,6 +25,7 @@
     NSLog(@"分支111");
 }
 - (IBAction)btnClick:(id)sender {
+    NSLog(@"分支2");
     TestVC *vc = [[TestVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
